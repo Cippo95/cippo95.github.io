@@ -1,4 +1,5 @@
-#My first post
+#My first post  
+
 Hi, I'm Cippo95, I'm an italian guy studying computer science engineering.
 I like the GNU/Linux world but a lot of stuff needs some configuring.
 
