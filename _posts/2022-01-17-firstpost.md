@@ -1,4 +1,7 @@
-#My first post  
+---
+title: "My first post"
+date: 2022-01-17
+---
 
 Hi, I'm Cippo95, I'm an italian guy studying computer science engineering.
 I like the GNU/Linux world but a lot of stuff needs some configuring.
