@@ -1,1 +1,4 @@
-theme: jekyll-theme-minimal
+title: Cippo95
+author: Cippo95
+show_excerpts: true # set to false to remove excerpts on the homepage
+theme: minima
