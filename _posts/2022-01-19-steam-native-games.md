@@ -8,8 +8,9 @@ In my free time I'm testing **Fedora 35** gaming capabilities.
 Valve seems to care about GNU/Linux succeeding as a gaming platform: 
   - They made and work on Proton,
   - The incoming Steam Deck will be based on Arch Linux,
-  - Their games run natively on Linux.
-So I have tested this last point and I tried Dota 2, CS:GO, Team Fortress 2... they all had problems.  
+  - Their games run natively on Linux.  
+
+I have tested this last point and I tried Dota 2, CS:GO, Team Fortress 2... they all had problems.  
 
 Before I show you how I have fixed my problems, I advise you to activate for every game the **gamemode**.
 Just add to the launch options of the game this:  
