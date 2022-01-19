@@ -42,5 +42,5 @@ Then put `-novid` in the launch option.
 This game will launch and play fine... a part a lot of missing audio!
 
 FIX: 
-`ausearch -c 'hl2_linux' --raw | audit2allow -M my-hl2linux
-semodule -X 300 -i my-hl2linux.pp`
+`ausearch -c 'hl2_linux' --raw | audit2allow -M my-hl2linux`
+`semodule -X 300 -i my-hl2linux.pp`
