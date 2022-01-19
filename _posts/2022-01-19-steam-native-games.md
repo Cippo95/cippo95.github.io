@@ -3,7 +3,7 @@ title: "Valve Linux native games often have issues"
 ---
 
 > I will format this post to look prettier in the future  
-> 
+
 In my free time I'm testing a little *Fedora 35* gaming capabilities.  
 I was trying to play Dota 2, CS:GO, Team Fortress 2 and they all had problems.  
 These games have a native port for Linux but they all had stuff to fix.  
