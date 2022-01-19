@@ -11,6 +11,8 @@ These games have a native port for Linux but they all had stuff to fix.
 After you have fixed them I advise to use the gamemode by adding "gamemoderun %command%" in the game launch options.  
 Game mode fixes a lot of stuttering, it is really a god send for me, thank you Feral Interactive for developing it.  
 PS: In case check if it is already installed with `sudo dnf install gamemode`.
+PPS: If you have other commands with %command% put only one %command% after all of them.
+For example I use mangohud (google it in case), so in my games I usually have "gamemoderun mangohud %command%".
 
 *All of what is said here is valid for Fedora 35.*  
 
@@ -19,9 +21,9 @@ PS: In case check if it is already installed with `sudo dnf install gamemode`.
 The game by default just hangs now and then, it is very annoying.  
 
 FIX:  
-Steam settings -> Shader Pre-caching -> Disable it.
+Steam settings -> Shader Pre-caching -> Disable it.  
 
-The game also with Nvidia 495 drivers just fails to close in game, close it from Steam.
+The game also with Nvidia 495 drivers just fails to close in game, close it from Steam.  
 
 # CS:GO
 
@@ -35,11 +37,12 @@ FIX:
 `ln -s /usr/lib64/libtcmalloc_minimal.so.4 libtcmalloc_minimal.so.0`  
 `n -s /usr/lib64/libtcmalloc_minimal.so.4 libtcmalloc_minimal.so.4`  
 
-Then put `-novid` in the launch option.
+Then put `-novid` in the launch option because apparently also the initial video hardlocks the game.  
 
 # Team Fortress 2
 
 This game will launch and play fine... a part a lot of missing audio!  
+If you open TF2 console you will see something complaining about selinux and mp3 impossibile to decode.
 
 FIX:  
 `ausearch -c 'hl2_linux' --raw | audit2allow -M my-hl2linux`  
