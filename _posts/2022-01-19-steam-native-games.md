@@ -13,7 +13,7 @@ Valve seems to care about GNU/Linux succeeding as a gaming platform:
 I have tested this last point and I tried Dota 2, CS:GO, Team Fortress 2... they all had problems.  
 
 Before I show you how I have fixed my problems, I advise you to activate for every game the **gamemode**.
-Just add to the launch options of the game this:  
+Just add this **at the very beginning** of the launch options of a selected game:  
 `gamemoderun %command%`  
 
 Game mode for me is a godsend, it fixes a lot of stuttering and I thank Feral Interactive for developing it.  
