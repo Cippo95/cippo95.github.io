@@ -1,35 +1,45 @@
 ---
-title: "Valve Linux native games often have issues" 
+title: "Valve's games have issues on Linux"
 ---
 
-> I will format this post to look prettier in the future  
+> I will format this post to look prettier in the future
 
-In my free time I'm testing a little *Fedora 35* gaming capabilities.  
-I was trying to play Dota 2, CS:GO, Team Fortress 2 and they all had problems.  
-These games have a native port for Linux but they all had stuff to fix.  
+In my free time I'm testing **Fedora 35** gaming capabilities.  
+Valve seems to care about GNU/Linux succeeding as a gaming platform: 
+  - They made and work on Proton,
+  - The incoming Steam Deck will be based on Arch Linux,
+  - Their games run natively on Linux.
+So I have tested this last point and I tried Dota 2, CS:GO, Team Fortress 2... they all had problems.  
 
-After you have fixed them I advise to use the gamemode by adding "gamemoderun %command%" in the game launch options.  
-Game mode fixes a lot of stuttering, it is really a god send for me, thank you Feral Interactive for developing it.  
-PS: In case check if it is already installed with `sudo dnf install gamemode`.
-PPS: If you have other commands with %command% put only one %command% after all of them.
-For example I use mangohud (google it in case), so in my games I usually have "gamemoderun mangohud %command%".
+Before I show you how I have fixed my problems, I advise you to activate for every game the **gamemode**.
+Just add to the launch options of the game this:  
+`gamemoderun %command%`  
 
-*All of what is said here is valid for Fedora 35.*  
+Game mode for me is a godsend, it fixes a lot of stuttering and I thank Feral Interactive for developing it.  
 
-# Dota 2  
+> In case check if it is already installed with:  
+> `sudo dnf install gamemode`.  
+> If you have other commands with %command% put only one %command% after all of them.
+> For example I use mangohud (google it in case), so in my games I usually have "gamemoderun mangohud %command%".
 
-The game by default just hangs now and then, it is very annoying.  
+**NOTE: All of what is said here is valid for Fedora 35 and could also depend on my personal PC build!**  
 
-FIX:  
+# Dota 2
+
+**ISSUE:** The game by default just hangs/locks now and then, it is very annoying, you will surely notice it. 
+
+**WHAT WORKED FOR ME:**  
+Disable Steam shader precaching:
 Steam settings -> Shader Pre-caching -> Disable it.  
 
-The game also with Nvidia 495 drivers just fails to close in game, close it from Steam.  
+The game also with Nvidia 495 drivers and Vulkan API just fails to close in game, close it from Steam.  
+With 470 it hasn't this problem, so this is something Nvidia has to fix I think.
 
 # CS:GO
 
-It just crashes on launch... Valve please CS:GO is broken, fix it.  
+**ISSUE:** It just crashes on launch... Valve... really.
 
-FIX:  
+**WHAT WORKED FOR ME:**  
 `sudo dnf in gperftools`  
 `cd ~/.local/share/Steam/steamapps/common/Counter-Strike Global Offensive/bin/linux64`  
 `mv libtcmalloc_minimal.so.0 libtcmalloc_minimal.so.0.bak &&`  
@@ -37,13 +47,20 @@ FIX:
 `ln -s /usr/lib64/libtcmalloc_minimal.so.4 libtcmalloc_minimal.so.0`  
 `n -s /usr/lib64/libtcmalloc_minimal.so.4 libtcmalloc_minimal.so.4`  
 
-Then put `-novid` in the launch option because apparently also the initial video hardlocks the game.  
+Then put `-novid` in the launch option because apparently also the initial video hardlocks the game... wow.  
 
 # Team Fortress 2
 
-This game will launch and play fine... a part a lot of missing audio!  
+**ISSUE:** This game will launch and play fine... a part a lot of missing audio!  
 If you open TF2 console you will see something complaining about selinux and mp3 impossibile to decode.
 
-FIX:  
+**WHAT WORKED FOR ME:**  
 `ausearch -c 'hl2_linux' --raw | audit2allow -M my-hl2linux`  
 `semodule -X 300 -i my-hl2linux.pp`  
+
+Another interesting thing is that TF2 has mouse sensitivity doubled, I have read that is because they use some old library with this bug.
+Take your usual sens in Source games and half it.
+
+So yeah Valve is doing great stuff for the Linux community... but also should check if their own games work properly.
+
+Have fun!
