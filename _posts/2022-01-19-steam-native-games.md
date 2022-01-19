@@ -1,6 +1,6 @@
---
+---
 title: "Valve Linux native games often have issues" 
---
+---
 
 > I will format this post to look prettier in the future
 
@@ -28,12 +28,12 @@ The game also with Nvidia 495 drivers just fails to close in game, close it from
 It just crashes on launch... Valve please CS:GO is broken, fix it.
 
 FIX:
-`sudo dnf in gperftools`
-`cd ~/.local/share/Steam/steamapps/common/Counter-Strike Global Offensive/bin/linux64`
-`mv libtcmalloc_minimal.so.0 libtcmalloc_minimal.so.0.bak &&`
-`mv libtcmalloc_minimal.so.4 libtcmalloc_minimal.so.4.bak`
-`ln -s /usr/lib64/libtcmalloc_minimal.so.4 libtcmalloc_minimal.so.0`
-`n -s /usr/lib64/libtcmalloc_minimal.so.4 libtcmalloc_minimal.so.4`
+`sudo dnf in gperftools`  
+`cd ~/.local/share/Steam/steamapps/common/Counter-Strike Global Offensive/bin/linux64`  
+`mv libtcmalloc_minimal.so.0 libtcmalloc_minimal.so.0.bak &&`  
+`mv libtcmalloc_minimal.so.4 libtcmalloc_minimal.so.4.bak`  
+`ln -s /usr/lib64/libtcmalloc_minimal.so.4 libtcmalloc_minimal.so.0`  
+`n -s /usr/lib64/libtcmalloc_minimal.so.4 libtcmalloc_minimal.so.4`  
 
 Then put `-novid` in the launch option.
 
@@ -42,5 +42,5 @@ Then put `-novid` in the launch option.
 This game will launch and play fine... a part a lot of missing audio!
 
 FIX: 
-`ausearch -c 'hl2_linux' --raw | audit2allow -M my-hl2linux`
-`semodule -X 300 -i my-hl2linux.pp`
+`ausearch -c 'hl2_linux' --raw | audit2allow -M my-hl2linux`  
+`semodule -X 300 -i my-hl2linux.pp`  
