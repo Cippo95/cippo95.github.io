@@ -60,7 +60,7 @@ If you open TF2 console you will see something complaining about selinux and mp3
 `semodule -X 300 -i my-hl2linux.pp`  
 
 Another interesting thing is that TF2 has mouse sensitivity doubled, I have read that is because they use some old library with this bug.
-Take your usual sens in Source games and half it.
+Set half of your usual sens in Source games and you are good to go.
 
 So yeah Valve is doing great stuff for the Linux community... but also should check if their own games work properly.
 
