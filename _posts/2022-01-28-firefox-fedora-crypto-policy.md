@@ -30,5 +30,6 @@ Don't really know if Fedora's policies are too strict or if that server is just 
 What I know is that:  
 - Now it works  
 - Once connected it uses TLS 1.2 and Fedora should refuse TLS inferior or equal to 1.1 with the stricter policy, so something doesn't add up.  
+
 What I think:  
 - Chrome probably doesn't care about system wide crypto policy... or maybe it is a Firefox bug.
