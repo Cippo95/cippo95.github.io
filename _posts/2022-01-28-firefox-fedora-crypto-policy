@@ -22,6 +22,9 @@ Fortunately you can use this console command:
 `sudo update-crypto-policies --set LEGACY`
 and restart the system to be able to connect again to these sites.
 
+To revert this setting:
+`sudo update-crypto-policies --set DEFAULT`
+
 Don't really know if Fedora's policies are too strict or if that server is just badly configured.
 What I know is that: 
 - Now it works
