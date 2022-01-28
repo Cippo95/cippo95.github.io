@@ -1,5 +1,5 @@
 ---
-title: "Firefox and the "Failed to load module" Twitch issue"
+title: 'Firefox and the "Failed to load module" Twitch issue
 ---
 
 Firefox has a really annoying issue with Twitch, the famous **"Failed to load module"**.  
