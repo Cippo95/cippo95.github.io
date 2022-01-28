@@ -11,11 +11,11 @@ I thought the hospital site was broken but then I tried to connect with my Andro
 Then I have downloaded Chrome on Fedora *and it connected securely*.  
 
 Then searching online I have found some french Fedora user encountering the same problem:  
-https://forums.fedora-fr.org/viewtopic.php?id=73081  
+<https://forums.fedora-fr.org/viewtopic.php?id=73081>  
 I'm italian so I used google translator to read it.  
 
 They refered to this article in Fedora documentation:  
-https://fedoraproject.org/wiki/Changes/StrongCryptoSettings2  
+<https://fedoraproject.org/wiki/Changes/StrongCryptoSettings2>  
 
 Apparently Firefox was just obbeying Fedora's "strict" system wide crypto policy.  
 
