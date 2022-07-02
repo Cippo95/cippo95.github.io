@@ -2,4 +2,4 @@
 title: "Home"
 ---
 
-I plan to talk about Linux stuff!
+I talk about Linux stuff!
