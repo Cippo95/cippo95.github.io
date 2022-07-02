@@ -7,11 +7,10 @@ title: "Firefox fonts getting cutted off"
 With default settings Firefox's fonts on some site get strangely cutted off.  
 I can notice this on Facebook post's titles, or very often on cookie policies.  
 
-The issue is that it seems that Firefox searches for Window's fonts like Arial, Helvetica, Time New Roman, Times and Courier New.  
-It doesn't find them and then tries to use compatible fonts failing.  
+It seems that Firefox searches for some Windows's font and then tries to use compatible fonts.
+This seems to lead to bad results for some reason.
 
-The fix is to use some good font to replace what Firefox searches for.
-You can do it creating a file in .config/fontconfig named fonts.conf.
+Creating a file in .config/fontconfig named fonts.conf that forces "good replacements" seems the way to go.
 
 Here is my current one: 
 
