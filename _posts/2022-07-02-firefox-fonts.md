@@ -13,7 +13,7 @@ It doesn't find them and then tries to use compatible fonts failing.
 The fix is to use some good font to replace what Firefox searches for.
 You can do it creating a file in .config/fontconfig named fonts.conf.
 
-Here is my currently one: 
+Here is my current one: 
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
