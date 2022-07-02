@@ -13,6 +13,7 @@ You can do it creating a file in .config/fontconfig named fonts.conf.
 
 Here is my currently one: 
 
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
@@ -47,3 +48,4 @@ Here is my currently one:
     </edit>
   </match>
 </fontconfig>
+
