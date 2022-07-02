@@ -1,12 +1,5 @@
-title: Cippo95's Blog
-author: Cippo95
+title: "Cippo95's Blog"
 email: cippo1995@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  I'm cippo95 and I will talk about Linux stuff!
-# social links
-#twitter_username: your-twitter-handle # DO NOT include the @ character, or else the build will fail!
 github_username:  Cippo95 # DO NOT include the @ character, or else the build will fail!
-
 show_excerpts: false # set to false to remove excerpts on the homepage
-
 theme: minima
