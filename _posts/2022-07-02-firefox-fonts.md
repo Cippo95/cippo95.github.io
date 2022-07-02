@@ -7,6 +7,8 @@ title: "Firefox fonts getting cutted off"
 With default settings Firefox's fonts on some site get strangely cutted off.  
 I can notice this on Facebook post's titles, or very often on cookie policies.  
 
+![Fonts issue](/cippo95.github.io/docs/assets/image/fontscutted.png)
+
 It seems that Firefox searches for some Windows's font and then tries to use compatible fonts.
 This seems to lead to bad results for some reason.
 
