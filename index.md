@@ -2,4 +2,4 @@
 title: "Home"
 ---
 
-Linux stuff!
+Talking about Linux stuff!
