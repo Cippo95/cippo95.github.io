@@ -1,5 +1,5 @@
 ---
-title:"Heroic Launcher MangoHud configuration"
+title: "Heroic Launcher MangoHud configuration"
 ---
 
 When I play games through Steam I use MangoHud to display stats like FPS, CPU usage and so on.
