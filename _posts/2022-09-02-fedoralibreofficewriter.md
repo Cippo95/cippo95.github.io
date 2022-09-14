@@ -3,6 +3,8 @@ title: "Fedora has bad rendering in LibreOffice Writer"
 ---
 
 LibreOffice Writer from Fedora's repositories renders characters differently from the standard Writer.  
+![Writer issue](/docs/assets/image/writer-issue.png)  
+> On the left Flatpak Flathub version on the right Fedora's  
 I think it is worse and I recommend to use the Flatpak version from FlatHub or the community version from official LibreOffice site.  
 
 I'm not the only one having seen this:  
