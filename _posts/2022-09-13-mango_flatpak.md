@@ -17,5 +17,4 @@ You just have to copy the config file in the right directory, in my case this co
 Of course if you change your config you have to copy it again.
 
 PS:  
-I have discovered the right folder looking at logs in Heroic (when you run a game it generates logs).
-There it complained that it couldn't find the configuration files (lol).
+I have discovered the right folder looking at logs in Heroic (when you run a game it generates logs): there it was complaining that it couldn't find the configuration files (lol).
