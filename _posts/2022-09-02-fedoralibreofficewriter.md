@@ -6,7 +6,8 @@ LibreOffice Writer from Fedora's repositories renders characters differently fro
 ![Writer issue](/docs/assets/image/writer-issue.png)  
 > On the left Flatpak Flathub version on the right Fedora's  
  
-I think it is worse and I recommend to use the Flatpak version from FlatHub or the community version from official LibreOffice site.  
+I think it is worse (notice the blur under the letters).
+I recommend to use the Flatpak version from FlatHub or the community version from official LibreOffice site.  
 
 I'm not the only one having seen this:  
 <https://www.reddit.com/r/Fedora/comments/wkgxt6/blurry_fonts_in_libreoffice_writer_only_in_fedora/>  
