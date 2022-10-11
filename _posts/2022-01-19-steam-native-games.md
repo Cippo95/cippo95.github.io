@@ -41,12 +41,12 @@ With 470 it hasn't this problem, so this is something Nvidia has to fix I think.
 **ISSUE:** It just crashes on launch... Valve... really.
 
 **WHAT WORKED FOR ME:**  
-`sudo dnf in gperftools`  
-`cd ~/.local/share/Steam/steamapps/common/Counter-Strike Global Offensive/bin/linux64`  
+`sudo dnf install gperftools`  
+`cd ~/.local/share/Steam/steamapps/common/Counter-Strike\ Global\ Offensive/bin/linux64`  
 `mv libtcmalloc_minimal.so.0 libtcmalloc_minimal.so.0.bak &&`  
 `mv libtcmalloc_minimal.so.4 libtcmalloc_minimal.so.4.bak`  
 `ln -s /usr/lib64/libtcmalloc_minimal.so.4 libtcmalloc_minimal.so.0`  
-`n -s /usr/lib64/libtcmalloc_minimal.so.4 libtcmalloc_minimal.so.4`  
+`ln -s /usr/lib64/libtcmalloc_minimal.so.4 libtcmalloc_minimal.so.4`  
 
 Then put `-novid` in the launch option because apparently also the initial video hardlocks the game... wow.  
 
