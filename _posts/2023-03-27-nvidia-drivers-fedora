@@ -1,0 +1,6 @@
+---
+title: "Install nvidia drivers on Fedora"
+---
+
+This guide is based on this one: https://phoenixnap.com/kb/fedora-nvidia-drivers  
+Not knowing if it will be always available I report the main instructions here (and some comment).
