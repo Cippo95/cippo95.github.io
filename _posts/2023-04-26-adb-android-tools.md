@@ -19,5 +19,5 @@ After this my phone wouldn't pair with my computer: a window to accept the pairi
 Running `adb devices` should tell you what devices are connected and accessible: my phone wasn't authorized.  
 
 Looking online it was a mess until I have looked at the arch wiki (god bless this wiki).  
-On the wiki a "tip window" says that some device needs to be connected with the MTP or PTP option, 
+On the wiki a "tip section" says that some device needs to be connected with the MTP or PTP option, 
 in my case there was only the PTP option and it solved my pairing problem (the window to accept the pairing appeared on the phone).  
