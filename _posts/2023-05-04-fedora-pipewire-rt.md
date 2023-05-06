@@ -18,19 +18,20 @@ My setup:
 - Sound card (PCI-E): ASUS Xonar DGX
 - USB microphone: Fifine T669
 
-The soundcard is not the problem since the output crackling happens also with the onboard audio and graphics card audio (through Display Port).  
-The audio output can be helped setting in `pipewire.conf` `default.clock.min-quantum = 1024`, I recommend to do a user configuration copying the file in `/usr/share/pipewire/pipewire.conf` in `~/.config/pipewire/pipewire.conf` and modify that setting in case.
+The soundcard is not the problem since the output crackling happens also with the onboard audio and graphics card audio (with Display Port).  
+The audio output can be helped setting in `pipewire.conf` `default.clock.min-quantum = 1024`.  
+I recommend to do this with an user configuration copying the file in `/usr/share/pipewire/pipewire.conf` in `~/.config/pipewire/pipewire.conf
 
 The way that I have fully fixed my issue is by installing a real time kernel (yes, it isn't something a casual user should do!).
 
-- Info to the real time kernel here:
-https://discussion.fedoraproject.org/t/audinux-repository-updated-for-fedora-37/44113  
+- Info to the real time kernel here:  
+(https://discussion.fedoraproject.org/t/audinux-repository-updated-for-fedora-37/44113)    
 - You need to install the nvidia driver package with an environment variable to enable the installation on rt kernels, infos here:  
-https://gist.github.com/pantor/9786c41c03a97bca7a52aa0a72fa9387  
+(https://gist.github.com/pantor/9786c41c03a97bca7a52aa0a72fa9387)  
 - Use Jack APIs (with pipewire-jack) in OBS to record your mic and audio for the best experience: install qjackctl and learn how to connect your audio input, outputs.    
 - Enjoy! Now everything works really well, maybe some occasional and rare xrun but that's it.
 
 Good luck!
 
 PS: This blog post should be sufficiente, but I have opened a pipewire issue where you can read some more stuff:  
-https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/3190
+(https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/3190)
