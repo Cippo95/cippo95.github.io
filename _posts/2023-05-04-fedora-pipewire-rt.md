@@ -20,7 +20,7 @@ My setup:
 
 The soundcard is not the problem since the output crackling happens also with the onboard audio and graphics card audio (with Display Port).  
 The audio output can be helped setting in `pipewire.conf` `default.clock.min-quantum = 1024`.  
-I recommend to do this with an user configuration copying the file in `/usr/share/pipewire/pipewire.conf` in `~/.config/pipewire/pipewire.conf
+I recommend to do this with an user configuration copying the file in `/usr/share/pipewire/pipewire.conf` in `~/.config/pipewire/pipewire.conf`.
 
 The way that I have fully fixed my issue is by installing a real time kernel (yes, it isn't something a casual user should do!).
 
