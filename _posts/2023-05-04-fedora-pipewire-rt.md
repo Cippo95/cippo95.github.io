@@ -32,5 +32,5 @@ https://gist.github.com/pantor/9786c41c03a97bca7a52aa0a72fa9387
 
 Good luck!
 
-PS: I have opened a pipewire issue where you can read some more stuff, but this article should be sufficient.  
+PS: This blog post should be sufficiente, but I have opened a pipewire issue where you can read some more stuff:  
 https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/3190
