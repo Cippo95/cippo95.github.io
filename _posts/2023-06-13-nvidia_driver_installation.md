@@ -6,7 +6,7 @@ This is a guide to install the NVIDIA binary driver of Fedoras systems.
 > I will keep this extremely concise.  
 
 1. Download the driver from NVIDIA's site: https://www.nvidia.com/en-us/drivers/unix/
-2. Rebuild kernel inifsram:  
+2. Rebuild kernel initramfs:  
 `sudo dracut --force /boot/initramfs-$(uname -r).img $(uname -r)`  
 3. Reboot.
 4. Set non graphical target:  
