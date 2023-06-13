@@ -2,7 +2,8 @@
 title: "NVIDIA binary driver installation"
 ---
 
-This is a guide to install the NVIDIA binary driver.
+This is a guide to install the NVIDIA binary driver.  
+I will keep this extremely concise but functional.  
 
 1. Download the driver from NVIDIA's site: https://www.nvidia.com/en-us/drivers/unix/.
 2. Rebuild kernel inifsram: `sudo dracut --force /boot/initramfs-$(uname -r).img $(uname -r)`
