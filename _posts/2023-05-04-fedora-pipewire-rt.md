@@ -2,8 +2,8 @@
 title: "My configuration for smooth audio on Fedora 37"  
 ---
 ## UPDATE
-I have discovered that adb was the root cause of the heavy crackling.
-Apparently a running adb daemon scans all USB ports, periodically causing the crackling (even when not using audio USB devices).
+I have discovered that adb was the root cause of the heavy crackling.  
+Apparently a running adb daemon scans all USB ports, periodically causing the crackling (even when not using audio USB devices).  
 I needed adb to use my phone as a camera (Droidcam OBS), now I have bought a Creative Live! Cam Sync 1080 V2.
 
 ## ORIGINAL POST
