@@ -1,8 +1,12 @@
 ---
 title: "My configuration for smooth audio on Fedora 37"  
 ---
+## UPDATE
+I have discovered that adb was the root cause of the heavy crackling.
+Apparently a running adb daemon scans all USB ports, periodically causing the crackling (even when not using audio USB devices).
+I needed adb to use my phone as a camera (Droidcam OBS), now I have bought a Creative Live! Cam Sync 1080 V2.
 
-> I'll develop the full article time by time.
+## ORIGINAL POST
 
 My PC with Fedora 37 has a lot of crackling with audio.
 
@@ -33,5 +37,5 @@ https://gist.github.com/pantor/9786c41c03a97bca7a52aa0a72fa9387
 
 Good luck!
 
-PS: This blog post should be sufficiente, but I have opened a pipewire issue where you can read some more stuff:  
+PS: This blog post should be sufficient, but I have opened a pipewire issue where you can read some more stuff:  
 https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/3190  
