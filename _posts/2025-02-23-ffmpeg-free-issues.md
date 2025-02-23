@@ -6,4 +6,4 @@ I use Fedora's standard dnf install of Firefox.
 
 > Clicking on a timestamp on comments or with the mouse on the time would make the video become a still frame with the audio still working.  
 
-The issue was Fedora's "free" (open source) version of ffmpeg, installing the version from RPM fusion works great, your mileage may vary.  
+The issue was Fedora's "free" (open source) version of ffmpeg, installing it from RPM fusion instead works great, your mileage may vary.  
