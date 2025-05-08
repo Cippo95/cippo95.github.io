@@ -18,8 +18,9 @@ GRUB_ENABLE_BLSCFG=true
 >Much of this is default, I find `video=DP-2:d` interesting, it disables my second monitor during boot.
 
 2. Plymouth
-3. No display manager
-   After trying a lot of them I don't use a display manager, I just type my username and password on tty1 (the terminal that appears after boot) and automated on that terminal the launch of the X server.
+3. No display manager  
+   I have tried a lot of them I don't like any display manager.
+   Now, I just type my username and password on tty1 (the terminal that appears after boot) and I have automated on that terminal the launch of the X server.
 4. Start the X server at boot
    To start the X server when I have successfully typed my username and password I added this to my `.bash_profile`:
 ```
@@ -28,3 +29,6 @@ if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
     exec startx
 fi
 ```
+
+Extra step: if you use a 2160p screen (usually called 4K) on the step 3 it is good to install a larger tty font (they are not like other fonts!).  
+I think that i use the terminus font but right now I'm not sure.
