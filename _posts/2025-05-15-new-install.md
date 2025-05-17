@@ -46,3 +46,4 @@ Work in progress now I'm just writing what I have done with some translation on 
 - Installed lxpolkit to have a graphical request of credentials (but maybe I need also some other package);
 - I installed thunar-archiver-plugin and xarchiver to extract zip files;
 - I installed the printer drivers copied the zip from the old SSD and unzipped them;
+- Pipewire by default can go down to 32 quantum, playing games I had it at 128 and audio was all over the place, I have limited it at 256;
